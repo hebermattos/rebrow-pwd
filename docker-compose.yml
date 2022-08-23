@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+
+  rebrow:
+      build: .
+      ports:
+       - "5001:5001"  
+  
+  redis:
+      image: redis
+      command: >
+          --requirepass 123qwe
+      ports:
+       - "6379:6379"
