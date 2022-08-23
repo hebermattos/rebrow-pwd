@@ -2,7 +2,7 @@ version: "3.7"
 services:
 
   rebrow:
-      build: .
+      build: ./src
       ports:
        - "5001:5001"  
   
